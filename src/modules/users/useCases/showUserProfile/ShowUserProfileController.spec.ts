@@ -29,6 +29,7 @@ describe("Show user profile Controller", () => {
       WHERE email = '${seedEmail}'
     `
     );
+    await connection.dropDatabase()
     await connection.close();
   });
 
